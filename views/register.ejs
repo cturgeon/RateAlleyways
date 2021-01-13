@@ -1,0 +1,72 @@
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+<head>
+  <title>registalleyway</title>
+  <style type="text/css">
+    body{
+    padding: 0;
+    margin: 0;
+    }
+    .hero{
+    height: 100vh;
+    position: relative;
+    }
+    .notification{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    }
+    .button{
+    margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero is-dark">
+    <div class="hero-body">
+      <h1 class="title has-text-centered is-size-2">Register to rate</h1>
+      <h4 class="title has-text-centered is-size-4">Get ready for fun!</h4>
+
+      <div class="columns is-centered">
+
+        <div class="column is-half">
+
+          <div class="notification is-light">
+
+
+            <form class="field" action='/users/register' method='POST'>
+                <div>
+                    <label class="label" for="name">Name</label>
+                    <input class="input" type="name" id="name" name="name" required>
+                </div>
+                <div>
+                    <label class="label" for="email">Email</label>
+                    <input class="input" type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label class="label" for="password">Password</label>
+                    <input class="input" type="password" id="password" name="password" required>
+                </div>
+                <div class="level">
+                    <div class="level-left">
+                      <button class="button is-dark" type="submit">Register</button>
+                    </div>
+                    
+                    <div class="level-right">
+                      <p class="p level-item is-size-6">Already registered?</p>
+                      <a class="button level-item" href="/users/login">login</a>
+                    </div>
+                  </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</body>
